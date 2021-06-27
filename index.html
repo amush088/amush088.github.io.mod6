@@ -1,0 +1,426 @@
+<!doctype html>
+<!-- Here is a link to the code the documents this code is based on
+https://getbootstrap.com/docs/5.0/getting-started/introduction/
+This will help you get started with your code!
+-->
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="styles/styles.css" rel="stylesheet" type="text/css">
+    
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="appt.js"></script>
+
+    <title>Module 4 Lab</title>
+</head>
+<body class="bg-dark">
+<!--
+I store all of the page information in a container,
+Many websites will use what is called CSS grid layouts, where you will have a header, body, footer and both sides used for ads or other information
+-->
+<div class = "container-lg">
+
+    <!--
+    Most websites now feature what is called a NavBar.
+    The example I give is quite simple with a logo and some text, but you can use it for many navigational patterns
+    https://getbootstrap.com/docs/5.0/components/navbar/
+    -->
+    <!--
+    <nav class="navbar bg-info text-dark p-3 my-3 ">
+        <h1><img src="images/company_logo.jpg" width="100" height="100" class="rounded-circle border border-dark"><strong> Mush's Veterinary Clinic </strong> <!-https://www.vectorstock.com/royalty-free-vector/vet-clinic-dog-cat-pet-logo-vector-22959045--_></h1>
+
+        <p><strong>123 Elgin Street, Ottawa, K2H 8Y4</strong></p>
+        <p>(613) 555-9999</p>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-info">
+        <h4><img src="images/company_logo.jpg" width="80" height="80" class="rounded-circle border border-dark"><strong> Mush's Veterinary Clinic </strong></h4>
+      a class="navbar-brand" href="#">Navbar w/ text</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+        </ul>
+        <span class="navbar-text">
+          Navbar text with an inline element
+        </span>
+      </div>
+    </nav>
+-->
+        <nav class="navbar navbar-expand-md fixed-top navbar-light shadow bg-info" style="background-color: rgb(249, 250, 250);">
+        <div class="container-fluid">
+            <a class="navbar-brand"> <img src="images/company_logo.jpg" width="70" height="70" class="rounded-circle border border-dark"></a>
+
+
+            <div class="collapse navbar-collapse align-bottom" id="navbarSupportedContent">
+                <ul class="navbar-nav " style="font-weight: 700; font-size: larger;">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home <img src="images/house-door.svg" alt="info" width="22" height="22"></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#aboutus"> About Us <img src="images/info-circle.svg" alt="info" width="22" height="22"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services <img src="images/list.svg" alt="info" width="22" height="22"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#vets">Veterenarians <img src="images/people.svg" alt="info" width="22" height="22"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#location">Location <img src="images/globe2.svg" alt="info" width="22" height="22"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hours">Hours <img src="images/calendar.svg" alt="info" width="22" height="22"></a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col" style="width: fit-content;">
+                    <h6 style="font-size: large; margin-right: 5px;"><strong>Mush's Veterinary Clinic</strong></h6>
+                    <h6 style="font-size: small;"> 123 Elgin Street, Ottawa, ON K1P 5J2</h6>
+                    <h6 style="font-size: small;"> (613) 555-999 </h6>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <br>
+    <!-- image wrap image: https://www.google.com/search?q=veterinarian&tbm=isch&hl=en&rlz=1C1CHBF_enCA766CA766&sa=X&ved=2ahUKEwiLkLap3ZXxAhUMMt8KHW6XCTkQrNwCKAB6BQgBEO0B&biw=1263&bih=552#imgrc=24pnq9N0V4Q50M-->
+    <div id="home">
+    </div>
+    <div class="wrap text-center">
+    <img src="images/doggy.jpg" id="doggy">
+    
+            <div class="text">
+            <h1> Welcome to Mush's Veterinary Clinic! <img src="images/company_logo.jpg" width="100" height="100" class="rounded-circle border border-dark"></h1>
+            </div>
+    
+    </div>
+    <br>
+    <div id="aboutus">
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class=" p-3 my-3 border bg-secondary">
+        <h1 class=" text-light"> About us</h1>
+       
+        <p class="text-light" style="font-size: 20px; padding-left: 0.05rem">Mush's Veterinary Clinic is a local clinic located at the heart of the capital city. We pride ourselves in our top quality service, ensuring that your beloved pets recieve the best care possible. Our staff consists of certified professionals with over 20 years of great service and positive reviews!  </p>
+    </div>
+    <!--
+    Tables are one of many ways to organize information easily.
+    It is a good way to list of prices, or services in a business website
+    https://getbootstrap.com/docs/5.0/content/tables/
+    -->
+
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <img src="images/exclamation-triangle.svg" alt="info" width="20" height="20"><strong> Alert!</strong> : Due to government-mandated COVID-19 restrictions we shall no longer be accepting walk-in appointments. You must book either online or by phone. Sorry for the inconvenience!
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+    <div id="services">
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <table class="table table-info table-hover">
+        <thead>
+            <tr>
+                <th scope="col"><h2>Service</h2></th>
+                <th scope="col"><h2>Description</h2></th>
+                <th scope="col"><h2>Price</h2></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Wound Treatment</td>
+                <td>Cleaning and sterilization of a wound. Assesment and bandaging of the wound.</td>
+                <td>$25.00</td>
+            </tr>
+            <tr>
+                <td>Vaccination</td>
+                <td>Vaccinations done for canines and felines. Mainly; distemper, rabies, influenza and hepatitis shots. </td>
+                <td>$55.00</td>
+            </tr>
+            <tr>
+                <td>Pet Grooming</td>
+                <td>Washing of the pet along with a haircut and trimming of the claws.</td>
+                <td>$30.00</td>
+            </tr>
+            <tr>
+                <td>Pet Fractures</td>
+                <td>Realignment and stabilization of a bone fracture.</td>
+                <td>$100.00</td>
+            </tr>
+            <tr>
+                <td>Dental and Oral Hygiene check</td>
+                <td>Check-up of teeth along with cleaning of the teeth, mouth and tongue of the pet.</td>
+                <td>$45.00</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <!-- Alerts are an easy way to grab the users attention, this page goes into more detail
+    https://getbootstrap.com/docs/5.0/components/alerts/
+    -->
+
+    <!--<h1>Button States</h1>-->
+    <!--
+    Buttons can be used for submitting forms, triggering events among many other things.
+    https://getbootstrap.com/docs/5.0/components/buttons/
+    -->
+        <!--
+    <button type="button" class="btn btn-warning">Primary Button</button>
+    <button type="button" class="btn btn-warning active">Active Button</button>
+    <button type="button" class="btn btn-warning" disabled>Disabled Button</button>
+        -->
+    <!--<h1>Modal Example</h1>-->
+
+    <!-- Button trigger modal
+    We use the same button code from above, but now we can trigger a modal to appear.
+    The bootstrap tutorial includes many different types of modals that you can explore
+    https://getbootstrap.com/docs/5.0/components/modal/
+    -->
+   
+    <!-- Cards are quite useful when building a website. They are a useful way to organize information.
+    They can be organized using a CSS grid or other layout options.
+    https://getbootstrap.com/docs/5.0/components/card/
+    -->
+    <div id="vets">
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+
+    <h1 class="text-light" id="nurses"><u>Meet our Team!</u></h1>
+    <br>
+    <div class="row justify-content-around">
+        <div class="card bg-secondary border-white" style="width: 18rem;">
+            <!--https://www.unitex.com/wp-content/uploads/2018/04/Unitex-Nursing-Shortage-1.jpg-->
+            <img src="images/doctor.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h3 class="text-white"><u>Stacey</u></h3>
+                <button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"> See profile <img src="images/chevron-compact-down.svg" alt="info" width="20" height="20"></button>
+
+                    <div class="collapse" id="collapseExample">
+                        <div class="card card-body"> Stacey has been with us for 6 years now. She graduated at Ontario's Vet College with honours and has been awarded with the <strong>Ottawa's Vet of the Year award</strong> in 2019. Stacey specializes in pet grooming and will always leave your pet looking fresh and clean. </div>
+                    </div>
+            </div>
+        </div>
+        <div class="card bg-secondary border-white" style="width: 18rem;">
+            <!--https://jnj-connectivity.brightspotcdn.com/dims4/default/7a88ee9/2147483647/strip/true/crop/627x627+315+0/resize/1200x1200!/quality/90/?url=https%3A%2F%2Fjnj-brightspot.s3.amazonaws.com%2Fjnj-connectivity%2F4b%2Fae%2Faa31a14e46e89764847d83e3689d%2Fnurses-innovate-group-photo.jpg-->
+            <img src="images/doctor2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h3 class="text-white"><u>Deborah</u></h3>
+                <button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1"> See profile <img src="images/chevron-compact-down.svg" alt="info" width="20" height="20"></button>
+
+                    <div class="collapse" id="collapseExample1">
+                        <div class="card card-body"> Deborah is our longest tenured vet, with 25 years of experience. She prides herself on her top quality customer service and always leaves both pets and their owners with a smile. Deborah is highly esteemed in this field and is on the board for the<strong>CMVA</strong> (Canadian Medical Veterinary Association).</div>
+                    </div>
+            </div>
+        </div>
+        <div class="card bg-secondary border-white" style="width: 18rem;">
+            <!--https://www.barton.edu/wp-content/uploads/2020/07/5-nurse-smile-1200x1200.jpg-->
+            <img src="images/doctor3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h3 class="text-white"><u>Angela</u></h3>
+                <button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2"> See profile <img src="images/chevron-compact-down.svg" alt="info" width="20" height="20"></button>
+
+                    <div class="collapse" id="collapseExample2">
+                        <div class="card card-body"> Angela has been with us for 10 years now. She's done volunteer vet work in <strong>6 different countries</strong>. Angela specializes in wound treatment. She always treats your pets with proper care, with minimal to no pain on the wound treatments, guaranteed.</div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div style="text-align:center;">
+
+    <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <h3>Book an appointment</h3>
+    </button>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-secondary">
+                    <h5 class="modal-title text-white" id="exampleModalLabel">Appointment booking</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body bg-secondary text-white">
+                    Please fill in the form
+                    <form>
+                            <br>
+                            <label class="text-white">Name: <input id="name" type="text" value=""></label>
+                            <br>
+                            <br>
+                            <label class="text-white">Email: <input type="text" value=""></label>
+                            <br>
+                            <br>
+                            <label class="text-white">Phone Number: <input id  = "phoneNumber" type="text" value="" placeholder="(xxx) xxx-xxxx"></label>
+                            <br>
+                            <br>
+                            <label>Choose a Veterinarian:</label>
+                            <select name="vets" id='selecter'>
+                                <option value="none"> </option>
+                                <option value="Stacey">Stacey</option>
+                                <option value="Deborah">Deborah</option>
+                                <option value="Angela">Angela</option>
+                            </select>
+                            <br>
+                            <br>
+                            <label>Choose a Service:</label>
+                            <select name="service" id='choose'>
+                                <option value="none"> </option>
+                                <option value="woundtreat">Wound Treatment</option>
+                                <option value="vaccine">Vaccination</option>
+                                <option value="grooming">Pet Grooming</option>
+                                <option value="Stacey">Pet Fracture</option>
+                                <option value="Deborah">Dental/Oral Hygiene check </option>
+                            </select>
+                            <br>
+                            <br>
+                            <label class="text-white">Date : <input type="date" value="" id="dateBook"></label> <label class="text-white">Time : <input id="timeBook" type="time" value=""></label>
+                            <br> 
+                            <br>                         
+                            <label class="text-white">Credit Card info: <input id  = "cardNumber" type="text" value="" placeholder="xxxx xxxx xxxx xxxx"></label>
+                            <br>
+                            <br>
+                    </form>
+                </div>
+                <div class="modal-footer bg-secondary">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button id="booked" type="button" class="btn btn-info">Book now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+      
+    <!-- This example is using what is called an accordian, this is one of three examples
+    https://getbootstrap.com/docs/5.0/components/accordion/
+    -->
+<!--
+    
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Accordion Item #1
+                </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">I can put information in this area</div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Accordion Item #2
+                </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">I can put information in this area</div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Accordion Item #3
+                </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">I can place information in this area</div>
+            </div>
+        </div>
+    </div>
+    -->
+    <div id="location">
+    </div>
+    <div id="hours">
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <main class=" m-0 p-0">
+  <br>
+    <h3 class="text-info"><u><strong>Location</strong></u></h3>
+    <!--Google map location caught by using https://google-map-generator.com/ 
+
+        <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=123%20elgin%20street%20Ottawa&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">google map codes for website</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div>
+ -->
+    <div id="map-container-google-4" class="z-depth-1-half map-container-4" style="height: 900px">
+      <iframe width="500" height="400" src="https://maps.google.com/maps?q=123%20elgin%20street%20Ottawa&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+        style="border:0" allowfullscreen></iframe>
+
+
+        <table class="one table bg-info" id="office_hrs" style="width: 30rem">
+             <thead>
+            <tr>
+                <th scope="col"><h2>Hours</h2></th>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>Sunday</td>
+                <td class="bg-danger" style="text-align:center;">closed</td>
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td>8:00 am - 19:00 pm</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>8:00 am - 19:00 pm</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>8:00 am - 19:00 pm</td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td>8:00 am - 19:00 pm</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>8:00 am - 17:30 pm</td>
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td>8:00 am - 15:30 pm</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+
+
+
+
+  </div>
+</main>
+<!-- here we input our javascript helper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>
